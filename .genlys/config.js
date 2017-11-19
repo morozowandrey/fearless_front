@@ -30,7 +30,6 @@ module.exports = {
             'scripts': 'app/scripts/**/*.js'
         },
         'clean': './dev',
-        'bower': 'bower_components/**/*.*'
     },
     'serverConfig': {
         'server': {

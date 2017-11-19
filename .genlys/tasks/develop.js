@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
-    cssmin = require('gulp-minify-css'),
+    cleanCSS = require('gulp-clean-css'),
+    concat = require('gulp-concat'),
     stylus = require('gulp-stylus'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
@@ -16,8 +17,7 @@ gulp.task('dev', [
     'script',
     'style',
     'font',
-    'image',
-    'bower',
+    'image'
 ]);
 
 gulp.task('view', function () {
@@ -36,10 +36,11 @@ gulp.task('script', function () {
 gulp.task('style', function () {
     gulp.src(config.path.app.stylus) //Выберем наш landing.scss
         .pipe(stylus())
+        .pipe(concat('style.css'))
         .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cssmin()) //Сожмем
+        .pipe(cleanCSS()) //Сожмем
         .pipe(gulp.dest(config.path.dev.css)) //И в build
-        .pipe(reload({stream: true}));
+        .pipe(reload({stream: true}))
 });
 
 gulp.task('image', function () {
@@ -50,10 +51,5 @@ gulp.task('image', function () {
 gulp.task('font', function () {
     gulp.src(config.path.app.fonts)
         .pipe(gulp.dest(config.path.dev.fonts))
-});
-
-gulp.task('bower', function () {
-    return gulp.src(config.path.bower)
-        .pipe(gulp.dest(config.path.dev.bower));
 });
 
