@@ -1,16 +1,18 @@
 var gulp = require('gulp'),
+    config = require('../config'),
+
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     cleanCSS = require('gulp-clean-css'),
     concat = require('gulp-concat'),
     stylus = require('gulp-stylus'),
-    browserSync = require("browser-sync"),
-    reload = browserSync.reload,
     rename = require('gulp-rename'),
     imagemin = require('gulp-imagemin'),
     babel = require("gulp-babel"),
 
-    config = require('../config');
+    browserSync = require("browser-sync"),
+    reload = browserSync.reload;
+
 
 gulp.task('dev', [
     'view',
@@ -28,7 +30,7 @@ gulp.task('view', function () {
 
 gulp.task('script', function () {
     gulp.src(config.path.app.scripts) //Найдем наш main файл
-        .pipe(babel())
+        // TODO: minimize js
         .pipe(gulp.dest(config.path.dev.js)) //Бросим готовый файл в build
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });

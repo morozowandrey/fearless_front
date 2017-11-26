@@ -13,7 +13,7 @@ module.exports = {
             'stylus': 'app/stylus/*.styl',
             'images': 'app/images/**/*.*',
             'fonts': 'app/fonts/**/*.*',
-            'scripts': 'app/scripts/**/*.js'
+            'scripts': ['app/js/**/*.js', 'bower_components/jQuery/dist/jquery.min.js']
         },
         'production': {
             'main': 'production/',
@@ -27,7 +27,7 @@ module.exports = {
             'stylus': 'app/stylus/**/*.styl',
             'images': 'app/images/**/*.*',
             'fonts': 'app/fonts/**/*.*',
-            'scripts': 'app/scripts/**/*.js'
+            'scripts': 'app/js/**/*.js'
         },
         'clean': './dev',
     },
