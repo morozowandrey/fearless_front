@@ -12,19 +12,18 @@
 
     <title>Document</title>
 </head>
-<body>
-
+<body class="main-page">
 <header class="header wrapper">
     <div class="header-block">
-        <div class="header-logo"></div>
+        <div class="header-logo" id="header-logo"></div>
         <h1 class="header-caption">
             <span class="header-caption__part">fearless</span>
             <span class="header-caption__part2">woman photo project</span>
         </h1>
     </div>
-    <a href="#" class="donate-button">donate</a>
+    <div class="donate-button">donate</div>
 </header>
-<main class="">
+<main>
     <section class="chief wrapper">
         <div class="container">
             <div class="row">
@@ -497,8 +496,8 @@
             </div>
         </div>
     </section>
-    <section class="wide-block wrapper">
-        <div class="container">
+    <section class="wide-block">
+        <div class="container wrapper">
             <div class="row">
                 <div class="col-md-6">
                     <img src="images/square_girl.png" class="wide-block__img">
@@ -506,10 +505,10 @@
                 <div class="col-md-6">
                     <div class="wide-block-content">
                         <div class="line line_short"></div>
-                        <p class="heading">some title</p>
-                        <p class="text">Kielbasa bacon boudin swine cow tri-tip shankle. Ham hock flank landjaeger porchetta, strip steak t-bone short loin beef chuck tri-tip kielbasa bresaola prosciutto hamburger bacon. Cow t-bone bresaola, swine ham bacon shankle ground round. Turkey pancetta sirloin, beef spare ribs boudin biltong pork frankfurter meatloaf jerky meatball bacon porchetta jowl.</p>
-                        <span class="heading">Далее-></span>
-                        <a href="#" class="story-button">Рассказать свою историю</a>
+                        <p class="wide-block-content__heading heading">some title</p>
+                        <p class="wide-block-content__text text">Kielbasa bacon boudin swine cow tri-tip shankle. Ham hock flank landjaeger porchetta, strip steak t-bone short loin beef chuck tri-tip kielbasa bresaola prosciutto hamburger bacon. Cow t-bone bresaola, swine ham bacon shankle ground round. Turkey pancetta sirloin, beef spare ribs boudin biltong pork frankfurter meatloaf jerky meatball bacon porchetta jowl.</p>
+                        <a href="#" class="wide-block-content__link heading">Далее-></a>
+                        <div class="story-button">Рассказать свою историю</div>
                     </div>
                 </div>
             </div>
@@ -636,10 +635,10 @@
                     <p class="footer-logo__textup">fearless</p>
                     <p class="footer-logo__textdown">woomen photo progect</p>
                 </div>
-                <a href="#" class="donate-button">donate</a>
+                <div class="donate-button">donate</div>
             </div>
             <div class="footer-mid flex col-lg-6">
-                <a href="#" class="story-button">рассказать свою историю</a>
+                <div class="story-button">рассказать свою историю</div>
             </div>
             <div class="footer-right col-lg-3 col-md-6">
                 <div class="footer-socials">
@@ -661,9 +660,11 @@
 </footer>
 
 <!-- build:js js/main.js -->
-<script src="js/jquery.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
+<script src="//shshaw.github.io/Canvallax/dist/canvallax.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
 
 </body>
 </html>
