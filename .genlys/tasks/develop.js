@@ -36,12 +36,12 @@ gulp.task('script', function () {
 });
 
 gulp.task('style', function () {
-    gulp.src(config.path.app.stylus) //Выберем наш landing.scss
+    gulp.src(config.path.app.stylus)
         .pipe(stylus())
         .pipe(concat('style.css'))
-        .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cleanCSS()) //Сожмем
-        .pipe(gulp.dest(config.path.dev.css)) //И в build
+        .pipe(prefixer())
+        .pipe(cleanCSS())
+        .pipe(gulp.dest(config.path.dev.css))
         .pipe(reload({stream: true}))
 });
 
