@@ -1,0 +1,206 @@
+.vertical-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.fade {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  z-index: 1050;
+  outline: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: white
+  opacity 1 !important
+}
+
+.pop-up {
+  width 100%
+  //height 100%
+
+  display: block;
+  background-color: #ffffff;
+  padding: 35px 75px;
+  margin: auto;
+  position: relative;
+
+  background-clip: padding-box;
+  outline: 0;
+  font-size: 0;
+  overflow-y auto
+}
+
+.pop-up .pop-up__text {
+  font-size: 14px;
+}
+
+.popup-close {
+  width 24px
+  height 24px
+
+  position: absolute;
+  right: 30px;
+  top: 30px;
+
+  background-image url("../images/close.png")
+  background-repeat no-repeat
+  background-position center
+  cursor: pointer;
+}
+
+.block {
+  display: flex
+  align-items center
+  justify-content center
+}
+
+
+//popup main-page
+.wrapper.wrapper_mainpage-popup {
+  max-width 950px
+}
+.pop-up.pop-up_mainpage {
+  .chief {
+    padding 0px
+  }
+  .popup-content {
+    margin-top 50px
+    margin-bottom 50px
+    text-align left
+  }
+  .text {
+    font-size 18px
+  }
+  .chief__img {
+    max-width 365px
+  }
+  .chief__text {
+    width 90%
+    margin-bottom 0
+    display inline-block
+    vertical-align middle
+    text-align: justify;
+    font-size 18px
+  }
+  .chief-box2 {
+    padding-left: 60px;
+  }
+  .header-block {
+    display flex
+    margin-bottom 90px
+    margin-left 0
+  }
+  .header-caption {
+    line-height 1
+    position relative
+  }
+  .header-caption:before {
+    content url("../images/lightning_yellow.png")
+    position absolute
+    top 0
+    left -60px
+  }
+  .header-logo {
+    width 40px
+  }
+  .header-caption__part {
+    font-size 38px
+  }
+  .header-caption__part2 {
+    font-size 34px
+  }
+  .popup-content-buttons {
+    margin-top 85px
+
+    .popup-content-buttonbox1,
+    .popup-content-buttonbox2 {
+      display inline-block
+
+      .heading {
+        font-size: 28px
+        margin-bottom 20px
+      }
+
+      .story-button,
+      .donate-button {
+        width 100%
+        padding-top 12px
+        padding-bottom 12px
+        font-size 18px
+        text-align center
+      }
+    }
+    .popup-content-buttonbox2 {
+      float right
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pop-up.pop-up_mainpage .header-caption__part {
+    font-size: 30px;
+  }
+  .pop-up.pop-up_mainpage .header-caption__part2 {
+    font-size: 24px;
+  }
+  .pop-up.pop-up_mainpage .header-block {
+    margin-bottom: 40px;
+  }
+  .pop-up.pop-up_mainpage .chief__text {
+    width: 85%
+  }
+  .pop-up.pop-up_mainpage .popup-content-buttons .popup-content-buttonbox1 .heading,
+  .pop-up.pop-up_mainpage .popup-content-buttons .popup-content-buttonbox2 .heading {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pop-up.pop-up_mainpage .chief {
+    text-align center
+  }
+  .pop-up.pop-up_mainpage .header-block {
+    display: inline-block;
+    width: 100%;
+    padding-left: 50px;
+  }
+  .pop-up.pop-up_mainpage .header-caption {
+    text-align left
+  }
+  .pop-up.pop-up_mainpage .chief-box2 {
+    padding-left 15px
+  }
+  .pop-up.pop-up_mainpage {
+    padding: 70px 15px 15px 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pop-up.pop-up_mainpage .header-caption__part {
+    font-size: 24px;
+  }
+  .pop-up.pop-up_mainpage .header-caption__part2 {
+    font-size: 18px;
+  }
+  .pop-up.pop-up_mainpage .popup-content-buttons {
+    margin-top: 55px;
+    text-align center
+  }
+  .pop-up.pop-up_mainpage .popup-content-buttons .popup-content-buttonbox2 {
+    float: none;
+    margin-top 30px
+  }
+  .pop-up.pop-up_mainpage .popup-content-buttons .popup-content-buttonbox1 .heading,
+  .pop-up.pop-up_mainpage .popup-content-buttons .popup-content-buttonbox2 .heading {
+    font-size: 18px;
+    margin-bottom 10px
+  }
+}
+//EO popup main-page

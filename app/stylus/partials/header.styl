@@ -1,0 +1,65 @@
+.header
+  padding 30px 0
+  display flex
+  justify-content space-between
+  align-items center
+
+  &-block
+    margin-left 15px
+
+  &-logo
+    width 32px
+    height 65px
+    margin-right 35px
+    display inline-block
+    background-image url("../images/lightning_yellow.png")
+    background-repeat no-repeat
+    background-position center
+
+    vertical-align middle
+
+  &-caption
+    margin 0
+    vertical-align middle
+    display inline-block
+
+    font-family main-ff-light
+    font-size 42px
+    text-transform uppercase
+
+    &__part
+      font-family main-ff-bold
+
+.header .donate-button {
+  margin-right 15px
+}
+
+@media (max-width: 992px) {
+  .header-caption__part2 {
+    display block
+  }
+}
+@media (max-width: 800px) {
+  .header-caption {
+    font-size 30px
+  }
+}
+@media (max-width: 670px) {
+  .header-block {
+    margin-bottom 20px
+  }
+  .header {
+    flex-direction column
+  }
+}
+@media (max-width: 450px) {
+  .header-block {
+    margin-left 0px
+  }
+  .header-logo {
+    display none
+  }
+  .header-caption {
+    font-size 26px
+  }
+}

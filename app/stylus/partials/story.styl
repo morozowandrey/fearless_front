@@ -1,0 +1,51 @@
+.story {
+  font-size 0px
+
+  .chief {
+    padding-bottom 100px
+  }
+
+  &-form {
+    background-color white
+    padding-bottom 120px
+
+    &-heading {
+      margin-bottom 30px
+      padding-left 15px
+
+      .heading {
+        font-size 28px
+      }
+    }
+    &-inputs {
+      padding-left 0
+      padding-right 45px
+
+      .donate-button {
+        width: 100%
+      }
+    }
+    &-textarea {
+      padding-left 45px
+
+      textarea {
+        min-height 410px
+        overflow-x hidden
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .story-form-inputs {
+    margin-bottom 45px
+  }
+  .story-form {
+    padding-bottom 20px
+  }
+}
+@media (max-width: 576px) {
+  .story-form-heading .heading {
+    font-size: 20px;
+  }
+}

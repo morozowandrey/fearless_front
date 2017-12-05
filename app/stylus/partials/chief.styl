@@ -1,0 +1,52 @@
+.chief {
+  padding-top 55px
+  padding-bottom 55px
+  background-color white
+
+  &__img {
+    width: 100%;
+  }
+  &__heading {
+    font-family main-ff-bold
+    font-size 28px
+    padding 30px 0
+    margin 0
+  }
+  &__text {
+    margin-bottom 40px
+    font-family main-ff-light
+    font-size 17px
+  }
+  &-follow {
+
+    &__text {
+      font-size 18px
+      margin-bottom 25px
+    }
+    &__fb,
+    &__inst {
+      width 40px
+      height 40px
+      display inline-block
+      background-image url("../images/fb.svg")
+      background-repeat no-repeat
+      background-position center
+    }
+    &__inst {
+      margin-left 35px
+      background-image url("../images/inst.svg")
+    }
+    &__fb:hover {
+      background-image url("../images/fb_hover.svg")
+    }
+    &__inst:hover {
+      background-image url("../images/inst_hover.svg")
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .chief__img {
+    margin-bottom 40px
+  }
+}

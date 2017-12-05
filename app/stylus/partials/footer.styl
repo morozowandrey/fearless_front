@@ -1,0 +1,104 @@
+.footer {
+  background-color dark-gray
+  min-height 325px
+  text-align center
+
+  &-logo {
+    margin: 0 auto;
+    padding-top 15px
+    margin-bottom 40px
+    max-width: 165px
+
+    display flex
+    flex-direction column
+    align-items center
+
+    &__img {
+      margin-bottom 10px
+    }
+    &__textup {
+      padding 0
+      margin 0
+      color white
+      font-family main-ff-bold
+      font-size 31px
+      line-height: 0.8;
+      text-transform uppercase
+    }
+    &__textdown {
+      padding 0
+      margin 0
+      color white
+      font-family main-ff-light
+      font-size 13px
+      text-transform uppercase
+    }
+  }
+  &-mid {
+
+  }
+  &-right {
+    text-align right
+  }
+  &-socials {
+    padding-top 85px
+    margin-bottom 30px
+
+    &__fb,
+    &__inst {
+      display inline-block
+      height 40px
+      width 40px
+    }
+
+    &__fb {
+      background-image url("../images/fb_white.svg")
+      background-repeat no-repeat
+      background-position center
+    }
+    &__fb:hover {
+      background-image url("../images/fb_hover.svg")
+    }
+    &__inst {
+      background-image url("../images/inst_white.svg")
+      margin-left 15px
+    }
+    &__inst:hover {
+      background-image url("../images/inst_hover.svg")
+    }
+  }
+}
+
+.footer .flex {
+  flex-direction column
+}
+
+@media screen and (max-width: 992px) {
+  .footer-mid {
+    display none !important
+  }
+  .footer .form-inline {
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 765px) {
+  .footer .form-inline {
+    justify-content: center;
+  }
+  .footer-right {
+    text-align center
+    margin-bottom 40px
+  }
+  .footer-socials {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer .form-inline {
+    max-width 210px
+    display inline-block
+  }
+  .footer .footer-right {
+    text-align center
+  }
+}
