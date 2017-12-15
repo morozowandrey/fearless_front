@@ -35,7 +35,7 @@ module.exports = {
         'server': {
             'baseDir': "./dev"
         },
-        'tunnel': true,
+        // 'tunnel': true,
         'host': 'localhost',
         'port': 9000
     }

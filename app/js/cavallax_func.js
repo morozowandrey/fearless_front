@@ -79,7 +79,7 @@ for (; i < count; i++){
     distance = 1;
 
     p = canvallax.Image({
-        src: '../images/lightning_black.png',
+        src: 'images/lightning_black.png',
 
         x: i * (width / count) / distance,
         y: randomRange(-300,height*3),

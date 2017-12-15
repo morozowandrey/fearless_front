@@ -24,8 +24,7 @@ gulp.task('watch', function () {
         gulp.start(['script']);
     });
     watch([config.path.watch.images], function (event, cb) {
-        gulp.start(['image']);
-    });
+y    });
     watch([config.path.watch.fonts], function (event, cb) {
         gulp.start(['font']);
     });
